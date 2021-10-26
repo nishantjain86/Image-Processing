@@ -2,7 +2,7 @@ clc
 clear all
 close all
 %Read an Image
-img= imread('C:\Users\Nishant Jain\Downloads\fund.jpg');
+img= imread('C:\Users\Nishant Jain\Downloads\fundus_image.jpg');
 
 %Convert the Image into gray scale and into double format 
 %Uint8 format restrict the pixel value between 0 and 255. Converting the 
@@ -11,7 +11,7 @@ img= imread('C:\Users\Nishant Jain\Downloads\fund.jpg');
 im=double(rgb2gray(img));
 
 % Nc =  Number of K Mean Cluster you need to form
-Nc = 20;
+Nc = input('Number of K Mean Cluster you need to form:');
 % If the difference between the old and the new cluster mean values lies within
 % th that is the Threshold value , then iteration or procedure of updating the 
 % cluster mean value will be stopped
